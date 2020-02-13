@@ -9,13 +9,18 @@ import br.com.alura.forum.modelo.Curso;
 import br.com.alura.forum.modelo.Topico;
 import br.com.alura.forum.repository.CursoRepository;
 
-public class TopicoFrom {
+public class TopicoForm {
 
-	@NotNull @NotEmpty @Length(min = 5)
+	@NotNull
+	@NotEmpty
+	@Length(min = 5)
 	private String titulo;
-	@NotNull @NotEmpty @Length(min = 10)
+	@NotNull
+	@NotEmpty
+	@Length(min = 10)
 	private String mensagem;
-	@NotNull @NotEmpty
+	@NotNull
+	@NotEmpty
 	private String nomeCurso;
 
 	public String getTitulo() {
